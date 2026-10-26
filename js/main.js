@@ -1,91 +1,68 @@
 /* ==============================
-   Navbar scroll behaviour
+   Navbar: solid once you scroll
    ============================== */
 const navbar = document.getElementById('navbar');
-
-window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 40);
-}, { passive: true });
+const onScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 24);
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
 
 /* ==============================
-   Mobile menu toggle
+   Mobile menu
    ============================== */
 const navToggle = document.getElementById('navToggle');
 const navLinks  = document.getElementById('navLinks');
 
-navToggle.addEventListener('click', () => {
-  const open = navLinks.classList.toggle('open');
-  const [s1, s2, s3] = navToggle.querySelectorAll('span');
-  if (open) {
-    s1.style.transform = 'rotate(45deg) translate(5px, 5px)';
-    s2.style.opacity   = '0';
-    s3.style.transform = 'rotate(-45deg) translate(5px, -5px)';
-    document.body.style.overflow = 'hidden';
-  } else {
-    [s1, s2, s3].forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
-    document.body.style.overflow = '';
-  }
-});
-
-navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-    [navToggle.querySelectorAll('span')].flat().forEach(s => {
-      s.style.transform = '';
-      s.style.opacity = '';
-    });
-    document.body.style.overflow = '';
-  });
-});
+function setMenu(open) {
+  navLinks.classList.toggle('open', open);
+  navToggle.classList.toggle('open', open);
+  navToggle.setAttribute('aria-expanded', String(open));
+  navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  document.body.style.overflow = open ? 'hidden' : '';
+}
+navToggle.addEventListener('click', () => setMenu(!navLinks.classList.contains('open')));
+navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenu(false)));
+document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
 
 /* ==============================
-   Smooth scroll offset (fixed nav)
+   Smooth scroll, leaving room for the fixed navbar
    ============================== */
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const href = a.getAttribute('href');
-    if (href === '#') return;
-    const target = document.querySelector(href);
+    const target = href === '#top' ? document.body : document.querySelector(href);
     if (!target) return;
     e.preventDefault();
-    const top = target.getBoundingClientRect().top + window.scrollY - 76;
+    const top = href === '#top' ? 0 : target.getBoundingClientRect().top + window.scrollY - 72;
     window.scrollTo({ top, behavior: 'smooth' });
   });
 });
 
 /* ==============================
-   Scroll-triggered reveal
+   Reveal on scroll (skipped if the visitor prefers less motion)
    ============================== */
-const revealEls = document.querySelectorAll(
-  '.service-card, .t-card, .info-item, .gallery-item, .why-item, .why-card, .why-big-card, .about-card-main'
-);
-
-revealEls.forEach(el => el.classList.add('reveal'));
-
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => {
-    if (!entry.isIntersecting) return;
-    setTimeout(() => entry.target.classList.add('visible'), i * 55);
-    revealObserver.unobserve(entry.target);
-  });
-}, { threshold: 0.12, rootMargin: '0px 0px -30px 0px' });
-
-revealEls.forEach(el => revealObserver.observe(el));
+const revealEls = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach((entry, i) => {
+      if (!entry.isIntersecting) return;
+      setTimeout(() => entry.target.classList.add('visible'), i * 70);
+      observer.unobserve(entry.target);
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  revealEls.forEach(el => observer.observe(el));
+} else {
+  revealEls.forEach(el => el.classList.add('visible'));
+}
 
 /* ==============================
-   Active nav link on scroll
+   Highlight the section you're in
    ============================== */
 const sections   = Array.from(document.querySelectorAll('section[id]'));
 const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
-
 window.addEventListener('scroll', () => {
   let current = '';
-  sections.forEach(sec => {
-    if (window.scrollY >= sec.offsetTop - 100) current = sec.id;
-  });
-  navAnchors.forEach(a => {
-    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
-  });
+  sections.forEach(sec => { if (window.scrollY >= sec.offsetTop - 120) current = sec.id; });
+  navAnchors.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
 }, { passive: true });
 
 /* ==============================

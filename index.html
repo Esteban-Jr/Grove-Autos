@@ -3,487 +3,302 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Grove Autos — Croydon's trusted family-run accident and bodywork repair centre with 20+ years of experience. Insurance approved repairers.">
-  <title>Grove Autos | Expert Auto Body Repairs in Croydon</title>
+  <meta name="description" content="Grove Autos — family-run accident repair, re-sprays and classic restoration in Croydon, with over 20 years of experience. Insurance approved repairers.">
+  <meta name="theme-color" content="#0a0b0d">
+  <title>Grove Autos | Accident Repair, Re-Sprays &amp; Restoration in Croydon</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,300..800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <!-- ========== NAVBAR ========== -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#" class="nav-logo">
-        <span class="logo-grove">GROVE</span>
-        <span class="logo-autos">AUTOS</span>
+  <header class="nav" id="navbar">
+    <div class="wrap nav-inner">
+      <a href="#top" class="brand" aria-label="Grove Autos — home">
+        <span class="brand-name">Grove</span><span class="brand-sub">Autos</span>
       </a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#testimonials">Reviews</a></li>
-        <li><a href="#contact" class="nav-cta">Free Quote</a></li>
-      </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
+      <nav aria-label="Main">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#restoration">Restoration</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li class="nav-cta-item"><a href="#contact" class="btn btn-ghost btn-sm">Free estimate</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
       </button>
     </div>
-  </nav>
+  </header>
 
-  <!-- ========== HERO ========== -->
-  <section class="hero" id="hero">
-    <div class="container">
-      <div class="hero-inner">
+  <main id="top">
 
-        <div class="hero-content">
-          <div class="hero-badge">
-            <i class="fas fa-shield-halved"></i>
-            Insurance Approved Repairers
-          </div>
-          <h1 class="hero-title">
-            Expert Bodywork.<br>
-            <span class="accent-text">Flawless Results.</span>
-          </h1>
-          <p class="hero-subtitle">
-            Croydon's trusted family-run repair centre with over 20 years of experience — from minor scratches to full restorations.
-          </p>
-          <div class="hero-actions">
-            <a href="#contact" class="btn btn-primary">
-              <span>Get Free Estimate</span>
-              <i class="fas fa-arrow-right"></i>
-            </a>
-            <a href="#services" class="btn btn-outline">
-              <span>Our Services</span>
-            </a>
-          </div>
-          <div class="hero-stats">
-            <div class="stat-item">
-              <span class="stat-number">20+</span>
-              <span class="stat-label">Years Experience</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-              <span class="stat-number">Free</span>
-              <span class="stat-label">No-Obligation Estimates</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-item">
-              <span class="stat-number">Family</span>
-              <span class="stat-label">Run Business</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="hero-img-main">
-            <img src="images/gallery/gallery11.jpg" alt="The Grove Autos accident repair workshop">
-          </div>
-          <div class="hero-img-secondary">
-            <img src="images/gallery/gallery7.jpg" alt="A Yamaha R6 painted in Grove Autos colours">
-          </div>
-        </div>
-
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <img src="images/gallery/gallery2.jpg" alt="">
       </div>
-    </div>
-  </section>
-
-  <!-- ========== ABOUT ========== -->
-  <section class="about" id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-visual">
-          <div class="about-card-main">
-            <div class="car-icon-bg">
-              <i class="fas fa-car-side"></i>
-            </div>
-            <div class="established">
-              <span class="est-label">Over</span>
-              <span class="est-year">20 Years</span>
-            </div>
-          </div>
-          <div class="about-card-accent">
-            <i class="fas fa-medal"></i>
-            <span>Family Run<br>Business</span>
-          </div>
-          <div class="about-badge">
-            <i class="fas fa-circle-check"></i>
-            <span>Insurance Approved</span>
-          </div>
+      <div class="wrap hero-content">
+        <p class="eyebrow reveal">Croydon · Over 20 years</p>
+        <h1 class="hero-title reveal">Bodywork,<br><em>perfected.</em></h1>
+        <p class="hero-lead reveal">Family-run accident repair, re-sprays and classic restoration — from small scratches to Aston Martins.</p>
+        <div class="hero-actions reveal">
+          <a href="#contact" class="btn btn-primary">Request a free estimate <i class="fas fa-arrow-right"></i></a>
+          <a href="tel:02087783551" class="btn btn-ghost"><i class="fas fa-phone"></i> 0208 778 3551</a>
         </div>
+      </div>
+      <div class="wrap">
+        <ul class="hero-facts reveal">
+          <li><span>Insurance approved</span>repairers</li>
+          <li><span>Factory-trained</span>team</li>
+          <li><span>Free</span>no-obligation estimates</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section about" id="about">
+      <div class="wrap about-grid">
         <div class="about-text">
-          <div class="section-label">About Grove Autos</div>
-          <h2 class="section-title">A Family Tradition<br>of <span class="accent-text">Excellence</span></h2>
-          <p class="body-text">As a family-run accident and bodywork repair centre, we are dedicated to providing a very high quality of workmanship, excellent customer service and value for money. It's this ethos that has earned us a fantastic reputation throughout London over the past 20 years.</p>
-          <p class="body-text">From small scratches to multiple panel repairs, and restoration projects from Land Rovers to Aston Martins — if you have any questions or enquiries, please don't hesitate to get in touch.</p>
-          <div class="features-grid">
-            <div class="feature">
-              <i class="fas fa-screwdriver-wrench"></i>
-              <span>Latest industry equipment</span>
-            </div>
-            <div class="feature">
-              <i class="fas fa-user-graduate"></i>
-              <span>Factory trained technicians</span>
-            </div>
-            <div class="feature">
-              <i class="fas fa-handshake"></i>
-              <span>Excellent customer service</span>
-            </div>
-            <div class="feature">
-              <i class="fas fa-file-lines"></i>
-              <span>Free no-obligation estimates</span>
-            </div>
-          </div>
-          <a href="tel:02087783551" class="btn btn-primary">
-            <i class="fas fa-phone"></i>
-            <span>Call: 0208 778 3551</span>
-          </a>
+          <p class="eyebrow reveal">Who we are</p>
+          <h2 class="title reveal">A family business with a <em>reputation</em> built car by car.</h2>
+          <p class="lead reveal">As a family-run accident and bodywork repair centre, we are dedicated to providing a very high quality of workmanship, excellent customer service and value for money. It's this ethos that has earned us a fantastic reputation throughout London over the past 20 years.</p>
+          <dl class="figures reveal">
+            <div><dt>20+</dt><dd>years in London</dd></div>
+            <div><dt>Family</dt><dd>run, start to finish</dd></div>
+            <div><dt>Free</dt><dd>estimates, no obligation</dd></div>
+          </dl>
         </div>
+        <figure class="about-photo reveal">
+          <img src="images/gallery/gallery11.jpg" alt="The Grove Autos accident repair workshop with a branded Nissan Micra and two Yamaha R6 motorbikes" loading="lazy">
+          <figcaption>The workshop · 60 Leslie Park Rd, Croydon</figcaption>
+        </figure>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ========== SERVICES ========== -->
-  <section class="services" id="services">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-label center">What We Do</div>
-        <h2 class="section-title center">Our <span class="accent-text">Services</span></h2>
-        <p class="section-sub center">From minor scratches to full restorations — we handle it all with the same level of care and precision.</p>
+    <!-- ========== SERVICES ========== -->
+    <section class="section services" id="services">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow reveal">What we do</p>
+          <h2 class="title reveal">Every repair, <em>one standard.</em></h2>
+        </div>
+        <ol class="service-list">
+          <li class="reveal">
+            <span class="num">01</span>
+            <h3>Accident repairs</h3>
+            <p>Any damage, from small scratches and dents to multiple panel repairs — including work as part of an insurance claim.</p>
+          </li>
+          <li class="reveal">
+            <span class="num">02</span>
+            <h3>Re-sprays</h3>
+            <p>Full and partial re-sprays in our spray booth, colour-matched to your vehicle, for cars and motorbikes.</p>
+          </li>
+          <li class="reveal">
+            <span class="num">03</span>
+            <h3>Restoration</h3>
+            <p>Restoration projects over the years from Land Rovers to Aston Martins.</p>
+          </li>
+          <li class="reveal">
+            <span class="num">04</span>
+            <h3>Wheel refurbishment</h3>
+            <p>Alloy wheel repairs and refurbishment, and repainting in any colour you like.</p>
+          </li>
+          <li class="reveal">
+            <span class="num">05</span>
+            <h3>Diagnostics</h3>
+            <p>Finding and fixing warning lights, electrical and mechanical faults.</p>
+          </li>
+          <li class="reveal">
+            <span class="num">06</span>
+            <h3>Servicing</h3>
+            <p>Regular servicing to keep your vehicle running smoothly and reliably.</p>
+          </li>
+          <li class="reveal">
+            <span class="num">07</span>
+            <h3>Air conditioning</h3>
+            <p>Air conditioning recharging — cool in summer, clear windows in winter.</p>
+          </li>
+          <li class="service-cta reveal">
+            <h3>Not sure what you need?</h3>
+            <p>Bring it in. We'll look it over and give you a clear, no-obligation quote.</p>
+            <a href="tel:02087783551" class="link-arrow">Call 0208 778 3551 <i class="fas fa-arrow-right"></i></a>
+          </li>
+        </ol>
       </div>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-car-burst"></i></div>
-          <h3>Accident Repairs</h3>
-          <p>We repair any damage, from small scratches and dents to multiple panel repairs, including work carried out as part of an insurance claim.</p>
-          <div class="service-arrow"><i class="fas fa-arrow-right"></i></div>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-spray-can"></i></div>
-          <h3>Re-Sprays</h3>
-          <p>Full and partial re-sprays in our spray booth, colour-matched to your vehicle — for cars and motorbikes.</p>
-          <div class="service-arrow"><i class="fas fa-arrow-right"></i></div>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-circle-dot"></i></div>
-          <h3>Wheel Refurbishment</h3>
-          <p>Alloy wheel repairs and refurbishment, and repainting in any colour you like.</p>
-          <div class="service-arrow"><i class="fas fa-arrow-right"></i></div>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-wrench"></i></div>
-          <h3>Restoration</h3>
-          <p>We have carried out a number of restoration projects over the years, from Land Rovers to Aston Martins.</p>
-          <div class="service-arrow"><i class="fas fa-arrow-right"></i></div>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
-          <h3>Diagnostics</h3>
-          <p>Vehicle diagnostics to find and fix warning lights, electrical and mechanical faults.</p>
-          <div class="service-arrow"><i class="fas fa-arrow-right"></i></div>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-wind"></i></div>
-          <h3>Air Conditioning</h3>
-          <p>Air conditioning recharging to keep your car cool in summer and your windows clear in winter.</p>
-          <div class="service-arrow"><i class="fas fa-arrow-right"></i></div>
-        </div>
-        <div class="service-card">
-          <div class="service-icon"><i class="fas fa-gear"></i></div>
-          <h3>Servicing</h3>
-          <p>Regular servicing to keep your vehicle running smoothly and reliably.</p>
-          <div class="service-arrow"><i class="fas fa-arrow-right"></i></div>
-        </div>
-        <div class="service-card service-cta">
-          <i class="fas fa-file-invoice-dollar"></i>
-          <h3>Free Estimate</h3>
-          <p>Not sure what you need? Our experts will assess and provide a transparent, no-obligation quote.</p>
-          <a href="tel:02087783551" class="btn btn-white-sm"><i class="fas fa-phone"></i> Call Us</a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ========== WHY US ========== -->
-  <section class="why-us">
-    <div class="container">
-      <div class="why-grid">
-        <div class="why-text">
-          <div class="section-label">Why Choose Us</div>
-          <h2 class="section-title">Quality You Can<br><span class="accent-text">Count On</span></h2>
-          <p class="body-text">We've built our reputation on doing things right — no shortcuts, no compromises. Every vehicle is treated as if it were our own.</p>
-          <div class="why-list">
-            <div class="why-item">
-              <div class="why-num">01</div>
-              <div>
-                <strong>Free, Honest Estimates</strong>
-                <p>No hidden costs. We assess your vehicle and give you a clear, fair price before any work begins.</p>
-              </div>
-            </div>
-            <div class="why-item">
-              <div class="why-num">02</div>
-              <div>
-                <strong>Insurance Approved</strong>
-                <p>We're insurance approved repairers, so we can carry out your repair as part of an insurance claim.</p>
-              </div>
-            </div>
-            <div class="why-item">
-              <div class="why-num">03</div>
-              <div>
-                <strong>Factory Trained Staff</strong>
-                <p>Our factory-trained team works with the latest equipment on every job.</p>
-              </div>
-            </div>
-            <div class="why-item">
-              <div class="why-num">04</div>
-              <div>
-                <strong>Value for Money</strong>
-                <p>High-quality work at a fair price — as our customers say in their reviews.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="why-visual">
-          <div class="why-card top-card">
-            <div class="why-card-icon"><i class="fas fa-star"></i></div>
-            <div class="why-card-content">
-              <strong>Free Estimates</strong>
-              <span>No obligation — just bring your car in or give us a call</span>
-            </div>
-          </div>
-          <div class="why-big-card">
-            <i class="fas fa-car-side"></i>
-            <div class="why-big-stat">
-              <span class="big-num">20+</span>
-              <span class="big-sub">Years of trusted service<br>in South London</span>
-            </div>
-          </div>
-          <div class="why-card bottom-card">
-            <div class="why-card-icon ins"><i class="fas fa-shield-halved"></i></div>
-            <div class="why-card-content">
-              <strong>Insurance Approved</strong>
-              <span>Repairs carried out as part of your claim</span>
-            </div>
-          </div>
-        </div>
+    <!-- ========== RESTORATION FEATURE ========== -->
+    <section class="feature" id="restoration">
+      <div class="feature-photo reveal">
+        <img src="images/gallery/db6.jpg" alt="An Aston Martin DB6 stripped to bare aluminium on a restoration jig" loading="lazy">
       </div>
-    </div>
-  </section>
+      <div class="feature-text">
+        <p class="eyebrow reveal">Restoration</p>
+        <h2 class="title reveal">From bare metal <em>back to its best.</em></h2>
+        <p class="lead reveal">Classic cars need patience, not shortcuts. We have carried out a number of restoration projects over the years — from Land Rovers to Aston Martins — taking each one back to the metal where it needs it.</p>
+        <p class="feature-note reveal">Pictured: an Aston Martin DB6 in the workshop, stripped to bare aluminium.</p>
+        <a href="#contact" class="link-arrow reveal">Talk to us about your project <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </section>
 
-  <!-- ========== GALLERY ========== -->
-  <section class="gallery" id="gallery">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-label center">Our Work</div>
-        <h2 class="section-title center">Recent <span class="accent-text">Projects</span></h2>
-        <p class="section-sub center">A few of the cars and bikes that have been through our workshop.</p>
-      </div>
-      <div class="gallery-grid">
-        <div class="gallery-item g-large">
-          <img src="images/gallery/gallery11.jpg" alt="The Grove Autos workshop front with a branded Nissan Micra and two Yamaha R6 motorbikes" loading="lazy">
-          <div class="g-overlay"><span class="g-tag">Our Workshop</span></div>
+    <!-- ========== WHY US ========== -->
+    <section class="section why">
+      <div class="wrap why-grid">
+        <div class="why-item reveal">
+          <i class="fas fa-shield-halved"></i>
+          <h3>Insurance approved</h3>
+          <p>We're insurance approved repairers, so your repair can be carried out as part of your claim.</p>
         </div>
-        <div class="gallery-item">
-          <img src="images/gallery/gallery2.jpg" alt="A classic Aston Martin masked up in the spray booth" loading="lazy">
-          <div class="g-overlay"><span class="g-tag">Re-Spray in Progress</span></div>
+        <div class="why-item reveal">
+          <i class="fas fa-user-gear"></i>
+          <h3>Factory-trained team</h3>
+          <p>Every job is done by factory-trained staff with the latest equipment.</p>
         </div>
-        <div class="gallery-item">
-          <img src="images/gallery/gallery7.jpg" alt="A Yamaha R6 in a custom blue and white livery" loading="lazy">
-          <div class="g-overlay"><span class="g-tag">Bike Livery</span></div>
+        <div class="why-item reveal">
+          <i class="fas fa-file-signature"></i>
+          <h3>Honest estimates</h3>
+          <p>Free and no-obligation. You know the price before any work begins.</p>
         </div>
-        <div class="gallery-item">
-          <img src="images/gallery/gallery3.jpg" alt="A motorbike mudguard with custom candy red and black paintwork" loading="lazy">
-          <div class="g-overlay"><span class="g-tag">Custom Paintwork</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="images/gallery/gallery1.jpg" alt="A classic blue Aston Martin DBS outside the workshop" loading="lazy">
-          <div class="g-overlay"><span class="g-tag">Classic Aston Martin</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="images/gallery/gallery9.jpg" alt="A freshly painted red car in the spray booth" loading="lazy">
-          <div class="g-overlay"><span class="g-tag">Fresh Paint</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="images/gallery/db6.jpg" alt="An Aston Martin DB6 stripped to bare aluminium on a restoration jig" loading="lazy">
-          <div class="g-overlay"><span class="g-tag">DB6 Restoration</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="images/gallery/db9.jpg" alt="The badge of an Aston Martin DB9 GT in the workshop" loading="lazy">
-          <div class="g-overlay"><span class="g-tag">Aston Martin DB9 GT</span></div>
+        <div class="why-item reveal">
+          <i class="fas fa-scale-balanced"></i>
+          <h3>Value for money</h3>
+          <p>High-quality work at a fair price — as our customers say in their reviews.</p>
         </div>
       </div>
-      <div class="gallery-note">
-        <i class="fas fa-images"></i>
-        <span>See more of our latest work <a href="https://www.facebook.com/profile.php?id=100057315015959" target="_blank" rel="noopener">on Facebook</a></span>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ========== TESTIMONIALS ========== -->
-  <section class="testimonials" id="testimonials">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-label center">What Clients Say</div>
-        <h2 class="section-title center">What Our <span class="accent-text">Customers Say</span></h2>
-      </div>
-      <div class="testimonials-grid">
-        <div class="t-card t-featured">
-          <div class="t-quote"><i class="fas fa-quote-left"></i></div>
-          <p>"Used as part of an insurance claim but feel I have discovered a hidden treasure that I would be prepared to use again and have no hesitation in recommending. Treated courteously and professionally throughout. Fantastic quality of work to the untrained eye. My friend is a mechanic who also checked out the work - and said it was also a brilliant job to the trained eye!"</p>
-          <div class="t-author">
-            <div class="t-avatar">J</div>
-            <div>
-              <strong>Jk K</strong>
-              <span>Insurance repair</span>
-            </div>
-          </div>
-        </div>
-        <div class="t-card">
-          <div class="t-quote"><i class="fas fa-quote-left"></i></div>
-          <p>"They did a great job, would recommend, good quality work, reasonably priced. Collected my car and as I drove back home I realised I still had an issue. Immediately I returned and they were more than happy to help. They looked at my car next and fixed this issue at no extra cost. They cleaned the car inside and out before returning it to me which was great. Once again thanks."</p>
-          <div class="t-author">
-            <div class="t-avatar">N</div>
-            <div>
-              <strong>Ned Moriarty</strong>
-              <span>Customer</span>
-            </div>
-          </div>
-        </div>
-        <div class="t-card">
-          <div class="t-quote"><i class="fas fa-quote-left"></i></div>
-          <p>"Terrific body shop. I used them on insurance the first time and paid myself a few other times. The service, the speed, and the quality are great, and so is value for money. I asked for quotes in Tonbridge and Sevenoaks and these guys were 2.5 times cheaper (no exaggeration)."</p>
-          <div class="t-author">
-            <div class="t-avatar">M</div>
-            <div>
-              <strong>Misha Nahorny</strong>
-              <span>Returning customer</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <p class="t-more"><a href="https://www.facebook.com/profile.php?id=100057315015959" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i> Read more reviews or leave your own on Facebook</a></p>
-    </div>
-  </section>
-
-  <!-- ========== CONTACT ========== -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-label center">Find Us</div>
-        <h2 class="section-title center">Come and <span class="accent-text">Visit Us</span></h2>
-        <p class="section-sub center">Give us a call to discuss your vehicle — we're always happy to help and offer free, no-obligation estimates.</p>
-      </div>
-      <div class="contact-cards">
-        <div class="info-item">
-          <i class="fas fa-phone"></i>
+    <!-- ========== GALLERY ========== -->
+    <section class="section gallery" id="gallery">
+      <div class="wrap">
+        <div class="section-head split">
           <div>
-            <strong>Call Us</strong>
-            <a href="tel:02087783551">0208 778 3551</a>
+            <p class="eyebrow reveal">Our work</p>
+            <h2 class="title reveal">Through <em>the workshop.</em></h2>
           </div>
+          <a class="link-arrow reveal" href="https://www.facebook.com/profile.php?id=100057315015959" target="_blank" rel="noopener">More on Facebook <i class="fas fa-arrow-right"></i></a>
         </div>
-        <div class="info-item">
-          <i class="fas fa-location-dot"></i>
-          <div>
-            <strong>Address</strong>
-            <span>60 Leslie Park Rd, Croydon, CR0 6TP</span>
-          </div>
-        </div>
-        <div class="info-item">
-          <i class="fas fa-clock"></i>
-          <div>
-            <strong>Visiting</strong>
-            <span>Please call ahead to check opening times or book an estimate</span>
-          </div>
+        <div class="gallery-grid">
+          <figure class="g g-wide reveal">
+            <img src="images/gallery/gallery1.jpg" alt="A classic blue Aston Martin DBS outside the workshop" loading="lazy">
+            <figcaption>Classic Aston Martin DBS</figcaption>
+          </figure>
+          <figure class="g g-tall reveal">
+            <img src="images/gallery/db9.jpg" alt="The badge of an Aston Martin DB9 GT in the workshop" loading="lazy">
+            <figcaption>Aston Martin DB9 GT</figcaption>
+          </figure>
+          <figure class="g reveal">
+            <img src="images/gallery/gallery2.jpg" alt="A classic Aston Martin masked up in the spray booth" loading="lazy">
+            <figcaption>Re-spray in progress</figcaption>
+          </figure>
+          <figure class="g reveal">
+            <img src="images/gallery/gallery9.jpg" alt="A freshly painted red car in the spray booth" loading="lazy">
+            <figcaption>Fresh paint</figcaption>
+          </figure>
+          <figure class="g reveal">
+            <img src="images/gallery/gallery3.jpg" alt="A motorbike mudguard with custom candy red and black paintwork" loading="lazy">
+            <figcaption>Custom paintwork</figcaption>
+          </figure>
+          <figure class="g g-wide reveal">
+            <img src="images/gallery/gallery7.jpg" alt="A Yamaha R6 in a custom blue and white livery" loading="lazy">
+            <figcaption>Yamaha R6 livery</figcaption>
+          </figure>
         </div>
       </div>
-      <div class="map-wrap">
-        <iframe
-          src="https://maps.google.com/maps?q=60+Leslie+Park+Road+Croydon+CR0+6TP&output=embed"
-          width="100%"
-          height="380"
-          style="border:0;border-radius:14px;display:block;"
-          allowfullscreen=""
-          loading="lazy"
-          title="Grove Autos location">
-        </iframe>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ========== CTA BANNER ========== -->
-  <section class="cta-strip">
-    <div class="container">
-      <div class="cta-inner">
-        <div class="cta-text">
-          <h2>Ready to restore your vehicle?</h2>
-          <p>Call us for a free, no-obligation estimate. We'll assess the damage and give you a transparent quote.</p>
+    <!-- ========== REVIEWS ========== -->
+    <section class="section reviews" id="reviews">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow reveal">In their words</p>
+          <h2 class="title reveal">What our <em>customers say.</em></h2>
         </div>
-        <div class="cta-btns">
-          <a href="tel:02087783551" class="btn btn-white">
-            <i class="fas fa-phone"></i>
-            <span>0208 778 3551</span>
-          </a>
+        <div class="review-grid">
+          <blockquote class="review review-lead reveal">
+            <p>"Used as part of an insurance claim but feel I have discovered a hidden treasure that I would be prepared to use again and have no hesitation in recommending. Treated courteously and professionally throughout. Fantastic quality of work to the untrained eye. My friend is a mechanic who also checked out the work - and said it was also a brilliant job to the trained eye!"</p>
+            <footer><strong>Jk K</strong><span>Insurance repair</span></footer>
+          </blockquote>
+          <blockquote class="review reveal">
+            <p>"They did a great job, would recommend, good quality work, reasonably priced. Collected my car and as I drove back home I realised I still had an issue. Immediately I returned and they were more than happy to help. They looked at my car next and fixed this issue at no extra cost. They cleaned the car inside and out before returning it to me which was great. Once again thanks."</p>
+            <footer><strong>Ned Moriarty</strong><span>Customer</span></footer>
+          </blockquote>
+          <blockquote class="review reveal">
+            <p>"Terrific body shop. I used them on insurance the first time and paid myself a few other times. The service, the speed, and the quality are great, and so is value for money. I asked for quotes in Tonbridge and Sevenoaks and these guys were 2.5 times cheaper (no exaggeration)."</p>
+            <footer><strong>Misha Nahorny</strong><span>Returning customer</span></footer>
+          </blockquote>
+        </div>
+        <p class="reviews-more reveal"><a class="link-arrow" href="https://www.facebook.com/profile.php?id=100057315015959" target="_blank" rel="noopener">Read more reviews or leave your own on Facebook <i class="fas fa-arrow-right"></i></a></p>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section contact" id="contact">
+      <div class="wrap contact-grid">
+        <div class="contact-text">
+          <p class="eyebrow reveal">Visit us</p>
+          <h2 class="title reveal">Let's take a <em>look at it.</em></h2>
+          <p class="lead reveal">Give us a call to talk about your vehicle — we're always happy to help, and estimates are free with no obligation.</p>
+          <ul class="contact-list reveal">
+            <li>
+              <span>Call</span>
+              <a href="tel:02087783551">0208 778 3551</a>
+            </li>
+            <li>
+              <span>Email</span>
+              <a href="mailto:enquiries@groveautos.com">enquiries@groveautos.com</a>
+            </li>
+            <li>
+              <span>Workshop</span>
+              <a href="https://maps.google.com/?q=60+Leslie+Park+Road+Croydon+CR0+6TP" target="_blank" rel="noopener">60 Leslie Park Rd, Croydon, CR0 6TP</a>
+            </li>
+            <li>
+              <span>Opening times</span>
+              <p>Please call ahead to check, or to book an estimate.</p>
+            </li>
+          </ul>
+          <a href="tel:02087783551" class="btn btn-primary reveal"><i class="fas fa-phone"></i> Call for a free estimate</a>
+        </div>
+        <div class="map reveal">
+          <iframe
+            src="https://maps.google.com/maps?q=60+Leslie+Park+Road+Croydon+CR0+6TP&output=embed"
+            loading="lazy"
+            allowfullscreen=""
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Map: Grove Autos, 60 Leslie Park Rd, Croydon"></iframe>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+  </main>
 
   <!-- ========== FOOTER ========== -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="footer-logo">
-            <span class="logo-grove">GROVE</span>
-            <span class="logo-autos">AUTOS</span>
-          </div>
-          <p>Family-run accident and bodywork repair centre in Croydon, serving South London for over 20 years.</p>
-          <div class="footer-social">
-            <a href="https://www.facebook.com/profile.php?id=100057315015959" target="_blank" rel="noopener" aria-label="Facebook">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </div>
-          <div class="footer-ins-badge">
-            <i class="fas fa-shield-halved"></i>
-            Insurance Approved Repairers
-          </div>
-        </div>
-        <div class="footer-nav">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="#services">Accident Repairs</a></li>
-            <li><a href="#services">Re-Sprays</a></li>
-            <li><a href="#services">Wheel Refurbishment</a></li>
-            <li><a href="#services">Restoration</a></li>
-            <li><a href="#services">Diagnostics</a></li>
-            <li><a href="#services">Servicing</a></li>
-          </ul>
-        </div>
-        <div class="footer-nav">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#testimonials">Reviews</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact-info">
-          <h4>Contact</h4>
-          <p><i class="fas fa-location-dot"></i> 60 Leslie Park Rd, Croydon CR0 6TP</p>
-          <p><i class="fas fa-phone"></i> <a href="tel:02087783551">0208 778 3551</a></p>
-          <p><i class="fas fa-envelope"></i> <a href="mailto:enquiries@groveautos.com">enquiries@groveautos.com</a></p>
-        </div>
-      </div>
-      <div class="footer-bar">
-        <p>&copy; <span id="year">2026</span> Grove Autos. All rights reserved.</p>
-        <p>60 Leslie Park Rd, Croydon, CR0 6TP</p>
+    <div class="wrap footer-inner">
+      <a href="#top" class="brand" aria-label="Back to top">
+        <span class="brand-name">Grove</span><span class="brand-sub">Autos</span>
+      </a>
+      <p class="footer-tag">Family-run accident and bodywork repair centre in Croydon · Insurance approved repairers</p>
+      <div class="footer-links">
+        <a href="tel:02087783551">0208 778 3551</a>
+        <a href="mailto:enquiries@groveautos.com">enquiries@groveautos.com</a>
+        <a href="https://www.facebook.com/profile.php?id=100057315015959" target="_blank" rel="noopener" aria-label="Grove Autos on Facebook"><i class="fab fa-facebook-f"></i></a>
       </div>
     </div>
+    <div class="wrap footer-bar">
+      <p>&copy; <span id="year">2026</span> Grove Autos. All rights reserved.</p>
+      <p>60 Leslie Park Rd, Croydon, CR0 6TP</p>
+    </div>
   </footer>
+
+  <!-- Call button that stays on screen on phones -->
+  <a href="tel:02087783551" class="call-fab" aria-label="Call Grove Autos"><i class="fas fa-phone"></i></a>
 
   <script src="js/main.js"></script>
 </body>
