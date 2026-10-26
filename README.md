@@ -6,7 +6,9 @@ A single static page (HTML, CSS and a little JavaScript), so there's nothing to 
 - `index.html`: the page
 - `css/style.css`: the styles
 - `js/main.js`: mobile menu, smooth scrolling, reveal animations and the footer year
-- `images/gallery/`: photos of the garage's own work, from its Facebook page
+- `images/gallery/`: the original photos of the garage's own work, from its Facebook page
+- `images/opt/`: the small, fast versions the page actually uses (WebP + JPEG at 480, 960 and up to 1600px)
+- `scripts/optimize_images.py`: makes `images/opt/` from the originals. **After adding or replacing a photo**, run it with a Python that has Pillow, e.g. `~/Aurea/.venv/bin/python scripts/optimize_images.py`
 
 **Live:** https://esteban-jr.github.io/Grove-Autos/ (GitHub Pages, from `main`)
 
