@@ -1,3 +1,6 @@
+/* Content only waits to fade in when this script runs; without it everything shows straight away */
+document.documentElement.classList.add('js');
+
 /* ==============================
    Navbar: solid once you scroll
    ============================== */
@@ -87,4 +90,12 @@ if (mapLoad) {
     mapLoad.replaceWith(frame);
   });
 }
+
+/* ==============================
+   Photo strip: arrow buttons scroll it sideways
+   ============================== */
+const strip = document.getElementById('strip');
+const step = () => (strip.querySelector('.shot')?.getBoundingClientRect().width || 400) + 18;
+document.getElementById('stripPrev')?.addEventListener('click', () => strip.scrollBy({ left: -step(), behavior: 'smooth' }));
+document.getElementById('stripNext')?.addEventListener('click', () => strip.scrollBy({ left: step(), behavior: 'smooth' }));
 
