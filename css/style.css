@@ -346,9 +346,10 @@ ul, ol { list-style: none; }
   .contact-list div { grid-template-columns: 1fr; gap: 4px; }
   .about-card { margin: -40px 12px 0; padding: 28px 22px; }
 }
-@media (max-height: 760px) and (min-width: 961px) {
-  .hero-text { padding-top: 104px; padding-bottom: 40px; }
-  .hero-title { font-size: clamp(3rem, 11vh, 5.6rem); }
-  .hero-approved { margin-top: 24px; }
-  .hero-actions { margin-top: 24px; }
+@media (max-height: 820px) and (min-width: 961px) {
+  .hero-text { padding-top: 100px; padding-bottom: 32px; }
+  .hero-title { font-size: clamp(2.8rem, 8.6vh, 5rem); }
+  .hero-lead { margin-top: 16px; font-size: 1.02rem; }
+  .hero-approved { margin-top: 20px; padding: 12px 0; }
+  .hero-actions { margin-top: 22px; }
 }
