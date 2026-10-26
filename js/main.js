@@ -70,3 +70,21 @@ window.addEventListener('scroll', () => {
    ============================== */
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+/* ==============================
+   Google map: only loaded when the visitor taps it
+   (faster first load, and no Google cookies until then)
+   ============================== */
+const mapLoad = document.getElementById('mapLoad');
+if (mapLoad) {
+  mapLoad.addEventListener('click', () => {
+    const frame = document.createElement('iframe');
+    frame.src = 'https://maps.google.com/maps?q=60+Leslie+Park+Road+Croydon+CR0+6TP&output=embed';
+    frame.title = 'Map: Grove Autos, 60 Leslie Park Rd, Croydon';
+    frame.loading = 'lazy';
+    frame.referrerPolicy = 'no-referrer-when-downgrade';
+    frame.allowFullscreen = true;
+    mapLoad.replaceWith(frame);
+  });
+}
+
